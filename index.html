@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+    <title>Melody Garden</title>
+  </head>
+  <body>
+    <header class="bar">
+      <a
+        class="back"
+        href="https://mike.pullen.dev/"
+        aria-label="Back to mike.pullen.dev"
+        >←</a
+      >
+      <p class="score">
+        Round <span id="round">0</span> · Best <span id="best">0</span>
+      </p>
+      <button type="button" id="mute-btn" aria-label="Mute sound">🔊</button>
+    </header>
+    <main>
+      <p id="status" class="status" aria-live="polite">
+        Tap the flowers to hear them sing!
+      </p>
+      <div id="garden" class="garden"></div>
+      <div id="menu" class="menu">
+        <p class="pick">Pick a garden:</p>
+        <div class="modes">
+          <button type="button" class="mode" data-mode="easy">
+            🌷 Easy<span>4 flowers</span>
+          </button>
+          <button type="button" class="mode" data-mode="hard">
+            🌻 Hard<span>6 flowers, faster</span>
+          </button>
+        </div>
+        <p class="how">
+          Watch which flowers sing, then tap them in the same order. Each round
+          adds one more note. How long a tune can you remember?
+        </p>
+      </div>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>

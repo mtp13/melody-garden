@@ -1,0 +1,17 @@
+{
+  "name": "melody-garden",
+  "version": "1.0.0",
+  "description": "Watch which flowers sing, then tap them back in the same order. Each round adds a note.",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:html": "html-validate index.html",
+    "lint": "npm run format:check && npm run lint:html"
+  },
+  "devDependencies": {
+    "html-validate": "11.16.4",
+    "prettier": "3.9.10"
+  }
+}
